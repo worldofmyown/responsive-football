@@ -7,7 +7,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     margin: 0%;
 }
 /* ---Frist Section:Conmebol Copa America 2021 Banner Styles--- */
@@ -69,7 +69,6 @@ button{
 }
 .players img{
     width: 100%;
-    /* height: 256px; */
 }
 .player-details h4{
     font-size: 24px;
@@ -82,24 +81,29 @@ button{
 /* ---Third Section: Hot News--- */
 
 .hot-news{
-    background-color:#ffb6d62f;
+    background-color:#ff006a10;
     text-align: center;
+    margin: 0%;  
 }
 .hot-news h1{
     font-size: 40px;
     color: crimson;
+    margin: 0;
 }
 .transfer-news{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 10px;
 }
 .news{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;  
-    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
 }
 .news-thumbnail img{
     height: 300px;
@@ -126,4 +130,116 @@ button{
 }
 .source{
     color: #afa5a5;
+}
+
+/* ---Fourth Section: Featured Video--- */
+
+.featured-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    background-color: rgba(0, 221, 221, 0.041);
+}
+.featured-video h1{
+    font-size: 42px;
+    font-weight: 600;
+    color: tomato;
+    margin: 25px 0px;
+}
+.embedded-video iframe{
+    border-radius: 10px;
+}
+.embedded-video {
+    background-color: rgba(185, 185, 185, 0.247);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+/*------- Footer Styles --------- */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.banner img{
+    width: 480px;
+    height: 110px;
+}
+.icon{
+    background-color: rgba(216, 191, 216, 0.438);
+    padding: 5px;
+    border-radius: 25px;
+}
+
+/* ----------MEDIA QUEIRIES-------- */
+
+@media only screen and (max-width: 688px){
+    main{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    .half-width{
+        margin: 10px;
+    }
+    .half-width h3{
+        font-size: 30px;
+    }
+    .half-width img{
+        width: 350px;
+        height: 250px;
+    }
+    .copa-america .all-players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);   
+    }
+    .all-players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .players{
+        width: 300%;
+    }
+    .hot-news {
+        text-align: center;
+        margin: 0%;
+    }
+    .transfer-news{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5px;
+    }
+    .news-thumbnail img {
+        height: 300px;
+        width: 350px;
+        border-radius: 10px;
+    }
+    .news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .featured-video h1 {
+        font-size: 30px;
+        font-weight: 600;
+        color: tomato;
+        margin: 25px 0px;
+    }
+    iframe{
+        width: 400px;
+        height: 350px;
+    }
+    .banner img {
+        width: 300px;
+        height: 100px;
+    }
+    
 }
