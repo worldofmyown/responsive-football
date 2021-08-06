@@ -61,12 +61,10 @@ button{
     margin: 70px 150px;
 }
 .players{
-    /* height: 450px;
-    width: 330px; */
     text-align: justify;
     background-color: white;
     padding: 10px;
-    box-shadow: 2px 2px 20px rgb(112, 112, 112);
+    box-shadow: 2px 2px 20px rgb(141, 141, 141);
     border-radius: 5px;
 }
 .players img{
@@ -81,13 +79,51 @@ button{
     margin: 0;
 }
 
-/* ---Third Section: Latest Transfer News--- */
+/* ---Third Section: Hot News--- */
 
+.hot-news{
+    background-color:#ffb6d62f;
+    text-align: center;
+}
+.hot-news h1{
+    font-size: 40px;
+    color: crimson;
+}
+.transfer-news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 .news{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    margin: 10px;
 }
-.news img{
+.news-thumbnail img{
     height: 300px;
     width: 400px;
+    border-radius: 10px;
+    padding: 3px;
+}
+.news-detail{
+    text-align: center;
+}
+.news-detail a{
+    text-decoration: none;
+}
+.news-title{
+    color: #2762c0;
+    font-weight: 600;
+    font-size: 20px;
+}
+.news-source{
+    color: #ce0d61;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0%;
+}
+.source{
+    color: #afa5a5;
 }
