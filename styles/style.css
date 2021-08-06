@@ -184,7 +184,7 @@ footer{
         border: 0;
     }
     .half-width{
-        margin: 10px;
+        margin: 20px;
     }
     .half-width h3{
         font-size: 30px;
@@ -193,29 +193,33 @@ footer{
         width: 350px;
         height: 250px;
     }
-    .copa-america .all-players{
+    .copa-america {
         display: grid;
         grid-template-columns: repeat(1, 1fr);   
     }
     .all-players{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        justify-content: space-evenly;
+        justify-items: center;
     }
     .players{
-        width: 300%;
+        width: 200%;
     }
     .hot-news {
         text-align: center;
         margin: 0%;
+        width: 100%;
     }
     .transfer-news{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 5px;
+        grid-gap: 15px;
     }
     .news-thumbnail img {
-        height: 300px;
-        width: 350px;
+        height: 250px;
+        width: 300px;
         border-radius: 10px;
     }
     .news {
@@ -227,19 +231,27 @@ footer{
         background-color: white;
         border-radius: 10px;
     }
+    .featured-video{
+        width: 100%;
+    }
     .featured-video h1 {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 600;
         color: tomato;
-        margin: 25px 0px;
+        margin: 10px 0px;
     }
     iframe{
-        width: 400px;
-        height: 350px;
+        width: 100%;
+        height: 250px;
     }
-    .banner img {
-        width: 300px;
-        height: 100px;
+    footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .banner img{
+            width: 250px;
+            height: 100px;
     }
     
 }
